@@ -1,4 +1,4 @@
-# 🌤️ Above Weather
+#  Above Weather
 
 > A modern, glassmorphic weather dashboard with real-time weather data, forecasts, geolocation, and interactive 3D animations.
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 **Above Weather** is a responsive weather dashboard designed to provide essential weather information through a clean, modern, and interactive interface.
 
@@ -22,9 +22,9 @@ The interface is built around a **glassmorphism design**, with smooth animations
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🌡️ Real-Time Weather Data
+###  Real-Time Weather Data
 
 View current weather conditions including:
 
@@ -36,7 +36,7 @@ View current weather conditions including:
 * 🌇 Sunset time
 * ☁️ Current weather condition
 
-### 📅 5-Day Forecast
+###  5-Day Forecast
 
 Get a quick overview of upcoming weather conditions with:
 
@@ -49,7 +49,7 @@ Get a quick overview of upcoming weather conditions with:
 
 Use your browser's location to instantly retrieve weather information for your current location.
 
-### 🔄 Interactive Unit Switcher
+###  Interactive Unit Switcher
 
 Switch between:
 
@@ -58,11 +58,11 @@ Switch between:
 
 The temperature unit selector uses a **3D card-flip animation** for a more interactive experience.
 
-### 🔐 Serverless API Proxy
+###  Serverless API Proxy
 
 API requests are handled through a **Vercel Serverless Function**, keeping the OpenWeatherMap API key on the server rather than exposing it directly in the frontend.
 
-### 📱 Responsive Design
+###  Responsive Design
 
 The dashboard is optimized for:
 
@@ -70,7 +70,7 @@ The dashboard is optimized for:
 * 📱 Mobile
 * 📲 Tablet
 
-### 🪟 Glassmorphism UI
+###  Glassmorphism UI
 
 The interface uses a modern glassmorphic visual style featuring:
 
@@ -83,7 +83,7 @@ The interface uses a modern glassmorphic visual style featuring:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Technology             | Purpose                                     |
 | ---------------------- | ------------------------------------------- |
@@ -108,7 +108,7 @@ The interface uses a modern glassmorphic visual style featuring:
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```text
 above-weather/
@@ -126,7 +126,7 @@ above-weather/
 └── README.md
 ```
 
-## ☁️ Deployment
+##  Deployment
 
 The project is designed to be deployed on **Vercel** with minimal configuration.
 
@@ -134,7 +134,7 @@ No additional build configuration is required.
 
 ---
 
-## 🔑 API
+##  API
 
 Weather data is provided by the **OpenWeatherMap API**.
 
@@ -147,7 +147,7 @@ The application uses:
 
 ---
 
-## 🔒 Security
+##  Security
 
 The OpenWeatherMap API key is **not stored in the frontend code**.
 
@@ -170,7 +170,7 @@ This prevents the API key from being directly exposed to users through the brows
 
 ---
 
-## 🎨 Design
+##  Design
 
 Above Weather follows a **glassmorphism-inspired design language** focused on simplicity and visual feedback.
 
@@ -191,14 +191,10 @@ The goal is to keep weather information **easy to scan while maintaining an enga
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Taha Ahmed**
 
 If you found this project interesting, consider giving the repository a ⭐ on GitHub!
 
 ---
-
-<p align="center">
-  Built with using HTML, CSS, JavaScript & OpenWeatherMap
-</p>
