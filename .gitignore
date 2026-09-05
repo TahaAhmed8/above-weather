@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+# Environment variables (contains private keys)
+.env
+.env.local
+.env.*.local
+
+# Operating system cache files
+.DS_Store
+Thumbs.db
+
+# Vercel build folder
+.vercel/
+
+# Node dependencies 
+node_modules/
+=======
 # Logs
 logs
 *.log
@@ -141,3 +157,4 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+>>>>>>> 09c35ab3d263edf09563523cde729e002589a16b

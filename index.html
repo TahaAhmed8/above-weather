@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card" id="weather-card">
+    <!-- Unified Top Bar -->
+    <div class="search-row">
+      <button id="geo-btn" title="Use current location">📍</button>
+      <div class="search">
+        <input type="text" placeholder="Enter city name" spellcheck="false" id="city-input" />
+        <button id="search-btn" aria-label="Search city">
+          <img src="images/search.png" alt="Search" />
+        </button>
+      </div>
+      <div class="unit-toggle">
+        <button id="unit-c" class="active">°C</button>
+        <span>/</span>
+        <button id="unit-f">°F</button>
+      </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div class="loading" style="display: none;">
+      <div class="spinner"></div>
+      <p>Fetching weather data...</p>
+    </div>
+
+    <!-- Error Box -->
+    <div class="error" style="display: none;">
+      <p id="error-msg">Invalid city name</p>
+    </div>
+
+    <!-- Weather Content -->
+    <div class="weather" style="display: none;">
+      <img src="images/rain.png" class="weather-icon" alt="Weather condition" />
+      
+      <!-- 3D Flipping Main Temp -->
+      <div class="temp-wrapper">
+        <div class="temp-card" id="temp-card">
+          <div class="temp-face temp-front">
+            <h1 class="temp">--°C</h1>
+          </div>
+          <div class="temp-face temp-back">
+            <h1 class="temp-alt">--°F</h1>
+          </div>
+        </div>
+      </div>
+
+      <p class="feels-like" id="feels-like">Feels like --°C</p>
+      <h2 class="city">--</h2>
+
+      <!-- Primary Metrics Grid -->
+      <div class="details">
+        <div class="col">
+          <img src="images/humidity.png" alt="Humidity" />
+          <div>
+            <p class="humidity">--%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="images/wind.png" alt="Wind speed" />
+          <div>
+            <p class="wind">-- km/h</p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sun Schedule -->
+      <div class="sun-times">
+        <div class="sun-item">
+          <span>Sunrise</span>
+          <strong id="sunrise-time">--:--</strong>
+        </div>
+        <div class="sun-item">
+          <span>Sunset</span>
+          <strong id="sunset-time">--:--</strong>
+        </div>
+      </div>
+
+      <!-- 5-Day Forecast -->
+      <div class="forecast-section">
+        <h3>5-Days Forecast</h3>
+        <div class="forecast-container" id="forecast-container"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
