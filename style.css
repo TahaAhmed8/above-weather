@@ -373,3 +373,39 @@ body {
   padding: 6px;
   border-radius: 6px;
 }
+/* 1. Ensure body centers content and avoids horizontal page drift */
+body {
+  margin: 0;
+  padding: 16px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* 2. Responsive Card Container */
+.card, .weather-card {
+  width: 100% !important;
+  max-width: 400px !important;
+  margin: 0 auto !important;
+  box-sizing: border-box;
+}
+
+/* 3. Responsive 5-Day Forecast Row */
+.forecast-container, .forecast {
+  display: flex !important;
+  justify-content: space-between !important;
+  gap: 6px !important;
+  width: 100% !important;
+  box-sizing: border-box;
+  overflow-x: auto; /* allows smooth swipe if screen is very narrow */
+}
+
+.forecast-item, .forecast-day {
+  flex: 1 1 0;
+  min-width: 58px;
+  padding: 8px 4px !important;
+  text-align: center;
+}
